@@ -3,6 +3,7 @@ import './MainPage.css';
 import Header from '../components/Header';
 import GameFootage from '../components/GameFootage';
 import BoxScore from '../components/BoxScore';
+import PlayerSearch from '../components/PlayerSearch';
 
 function MainPage() {
     return (
@@ -10,6 +11,7 @@ function MainPage() {
             <Header />
             <GameFootage />
             <BoxScore />
+            <PlayerSearch />
         </>
     )
 }

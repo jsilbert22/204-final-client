@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import GameBlurb from "./GameBlurb";
 
 const games = [
   {
     id: 1,
     title: "Game 1: Cardinals vs Rangers",
+    summary: "Game 1: A thrilling matchup between the Cardinals and the Rangers.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["Team A", "1", "0", "2", "0", "1", "0", "0", "0", "0", "4", "6", "1"],
@@ -13,6 +15,7 @@ const games = [
   {
     id: 2,
     title: "Game 2: Cardinals vs Rangers",
+    summary: "Game 2: Another intense face-off with some unexpected plays.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "2"],
@@ -22,6 +25,7 @@ const games = [
   {
     id: 3,
     title: "Game 3: Cardinals vs Rangers",
+    summary: "Game 3: A nail-biter with stellar pitching performances.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "3"],
@@ -31,39 +35,43 @@ const games = [
   {
     id: 4,
     title: "Game 4: Cardinals vs Rangers",
+    summary: "Game 4: A nail-biter with stellar pitching performances.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
-      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "4"],
+      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "3"],
       ["Team D", "1", "0", "1", "0", "0", "0", "2", "0", "1", "5", "9", "0"],
     ],
   },
   {
     id: 5,
     title: "Game 5: Cardinals vs Rangers",
+    summary: "Game 5: A nail-biter with stellar pitching performances.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
-      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "5"],
+      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "3"],
       ["Team D", "1", "0", "1", "0", "0", "0", "2", "0", "1", "5", "9", "0"],
     ],
   },
   {
     id: 6,
     title: "Game 6: Cardinals vs Rangers",
+    summary: "Game 6: A nail-biter with stellar pitching performances.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
-      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "6"],
+      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "3"],
       ["Team D", "1", "0", "1", "0", "0", "0", "2", "0", "1", "5", "9", "0"],
     ],
   },
   {
     id: 7,
     title: "Game 7: Cardinals vs Rangers",
+    summary: "Game 7: A nail-biter with stellar pitching performances.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
-      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "7"],
+      ["Team C", "0", "1", "0", "0", "2", "1", "0", "0", "0", "4", "8", "3"],
       ["Team D", "1", "0", "1", "0", "0", "0", "2", "0", "1", "5", "9", "0"],
     ],
-  }
+  },
 ];
 
 function BoxScore() {
@@ -72,6 +80,8 @@ function BoxScore() {
   const handleTabClick = (id) => {
     setActiveTab(id);
   };
+
+  const activeGame = games.find((game) => game.id === activeTab);
 
   const renderBoxScore = (boxScore) => {
     return (
@@ -109,9 +119,8 @@ function BoxScore() {
           </button>
         ))}
       </div>
-      <div className="box-score">
-        {renderBoxScore(games.find((game) => game.id === activeTab).boxScore)}
-      </div>
+      <div className="box-score">{renderBoxScore(activeGame.boxScore)}</div>
+      <GameBlurb summary={activeGame.summary} />
     </>
   );
 }
