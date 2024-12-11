@@ -109,7 +109,7 @@ function BoxScore() {
   };
 
   return (
-    <>
+    <div id="container">
       <div className="tabs">
         {games.map((game) => (
           <button
@@ -122,9 +122,11 @@ function BoxScore() {
         ))}
       </div>
       <div className="box-score">{renderBoxScore(activeGame.boxScore)}</div>
-      <GameBlurb summary={activeGame.summary} />
-      <PlayerSearch />
-    </>
+      <div id="blurb-and-search">
+        <GameBlurb summary={activeGame.summary} />
+        <PlayerSearch />
+      </div>
+    </div>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './PlayerSearch.css';
 
 const PlayerSearch = () => {
   const [playerName, setPlayerName] = useState('');
@@ -9,8 +10,8 @@ const PlayerSearch = () => {
     if (!playerName.trim()) return;
 
     fetch("https://api.sportsdata.io/v3/mlb/scores/json/PlayersByFreeAgents?key=122bf01103de4577ab297ec486238a0c")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         const player = data.find(
           (p) => `${p.FirstName} ${p.LastName}`.toLowerCase() === playerName.toLowerCase()
         );
@@ -30,27 +31,28 @@ const PlayerSearch = () => {
   };
 
   return (
-    <div>
+    <div id="player-search">
       <h1>MLB Player Search</h1>
-      <input
-        type="text"
-        placeholder="Enter player name (e.g. Paul Goldschmidt)"
-        value={playerName}
-        onChange={(e) => setPlayerName(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+      <div id="search-bar">
+        <input
+          type="text"
+          placeholder="Enter player name (e.g. Paul Goldschmidt)"
+          value={playerName}
+          onChange={(e) => setPlayerName(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {playerData && (
-        <div id="player-info">
-          <div className="player-data"><strong>Name:</strong> {playerData.FirstName} {playerData.LastName}</div>
-          <div className="player-data"><strong>Position:</strong> {playerData.Position}</div>
-          <div className="player-data"><strong>Bat Hand:</strong> {playerData.BatHand}</div>
-          <div className="player-data"><strong>Throw Hand:</strong> {playerData.ThrowHand}</div>
-          <div className="player-data"><strong>Height:</strong> {playerData.Height} inches</div>
-          <div className="player-data"><strong>Weight:</strong> {playerData.Weight} lbs</div>
-        </div>
-      )}
+      {error && <p className="error">{error}</p>}
+
+      <div id="player-info">
+        <div className="player-data"><strong>Name:</strong> {playerData ? `${playerData.FirstName} ${playerData.LastName}` : "N/A"}</div>
+        <div className="player-data"><strong>Position:</strong> {playerData ? playerData.Position : "N/A"}</div>
+        <div className="player-data"><strong>Bat Hand:</strong> {playerData ? playerData.BatHand : "N/A"}</div>
+        <div className="player-data"><strong>Throw Hand:</strong> {playerData ? playerData.ThrowHand : "N/A"}</div>
+        <div className="player-data"><strong>Height:</strong> {playerData ? `${playerData.Height} inches` : "N/A"}</div>
+        <div className="player-data"><strong>Weight:</strong> {playerData ? `${playerData.Weight} lbs` : "N/A"}</div>
+      </div>
     </div>
   );
 };

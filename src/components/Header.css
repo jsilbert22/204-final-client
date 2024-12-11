@@ -13,13 +13,14 @@
 h1 {
     text-align: center;
     font-family: "Racing Sans One", sans-serif;
-    border-bottom: 1px solid black;
-    width: 16rem;
+    border-bottom: 2px solid black;
+    width: 24rem;
+    padding-bottom: 3px;
     margin-bottom: 5px;;
 }
 
 h3 {
-    font-family: "Rambla", sans-serif;
+    font-family: "Racing Sans One", sans-serif;
     margin-bottom: 10px;
 }
 
