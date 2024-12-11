@@ -35,12 +35,13 @@ const PlayerSearch = () => {
       <h1>MLB Player Search</h1>
       <div id="search-bar">
         <input
+          id="search"
           type="text"
           placeholder="Enter player name (e.g. Paul Goldschmidt)"
           value={playerName}
           onChange={(e) => setPlayerName(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button id="button" onClick={handleSearch}>Search</button>
       </div>
 
       {error && <p className="error">{error}</p>}

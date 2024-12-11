@@ -1,8 +1,9 @@
 import React from "react";
+import './GameBlurb.css';
 
 function GameBlurb({ summary }) {
   return (
-    <div className="game-blurb">
+    <div id="gameblurb">
       <p>{summary}</p>
     </div>
   );

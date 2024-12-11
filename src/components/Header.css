@@ -13,18 +13,23 @@
 h1 {
     text-align: center;
     font-family: "Racing Sans One", sans-serif;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid red;
     width: 24rem;
     padding-bottom: 3px;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
+    color: red;
 }
 
 h3 {
     font-family: "Racing Sans One", sans-serif;
     margin-bottom: 10px;
+    color: red;
 }
 
-p {
+#series-summary {
     font-family: "Rambla", sans-serif;
-    padding: 10px;
+    padding: 16px;
+    border: 4px solid red;
+    margin: 16px;
+    background-color: white;
 }

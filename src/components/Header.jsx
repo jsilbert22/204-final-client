@@ -6,7 +6,7 @@ function Header() {
         <div id="container">
             <h1>In The Cards</h1>
             <h3>The Underdogs that Refused to Lose</h3>
-            <p>The 2011 World Series between the St. Louis Cardinals and the Texas Rangers was an unforgettable 
+            <p id="series-summary">The 2011 World Series between the St. Louis Cardinals and the Texas Rangers was an unforgettable 
                 showdown filled with resilience and drama. The Rangers, chasing their first title, came within 
                 one strike of victory twice in Game 6, only for the Cardinals to rally both times. David Freese 
                 was the hero of the night, tying the game in the ninth with a triple and winning it in the 11th 

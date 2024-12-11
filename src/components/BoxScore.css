@@ -5,70 +5,79 @@
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    color: black;
-  }
-  
-  td:nth-child(odd) {
-    background-color: #f9f9f9;
-  }
-  
-  td:nth-child(even) {
-    background-color: #ffffff;
-  }
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  .tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .tabs button {
-    background-color: transparent;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.3s, background-color 0.3s;
-  }
-  
-  .tabs button:hover {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-  }
-  
-  .tabs button.active {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .box-score {
-    width: 100%;
-  }
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
 
-  #container {
-    display: flex;
-    flex-direction: column;
-  }
+th {
+  background-color: #e92e2e;
+  color: white;
+  font-family: "Rambla", sans-serif;
+}
 
-  #blurb-and-search {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+td:nth-child(odd) {
+  background-color: #ffd3d3;
+  font-family: "Rambla", sans-serif;
+}
+
+td:nth-child(even) {
+  background-color: #ffe3e3;
+  font-family: "Rambla", sans-serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
+  font-family: "Racing Sans One", sans-serif;
+  border-right: solid 1px white;
+  width: 10rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabs button:hover {
+  background-color: #e92e2e;
+  color: white;
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.tabs button.active {
+  background-color: #e92e2e;
+  color: white;
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.box-score {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#blurb-and-search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
   
