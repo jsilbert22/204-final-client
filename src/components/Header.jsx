@@ -3,8 +3,9 @@ import './Header.css';
 
 function Header() {
     return (
-        <>
-            <h1>Welcome to My Page</h1>
+        <div id="container">
+            <h1>In The Cards</h1>
+            <h3>The Underdogs that Refused to Lose</h3>
             <p>The 2011 World Series between the St. Louis Cardinals and the Texas Rangers was an unforgettable 
                 showdown filled with resilience and drama. The Rangers, chasing their first title, came within 
                 one strike of victory twice in Game 6, only for the Cardinals to rally both times. David Freese 
@@ -13,9 +14,9 @@ function Header() {
                 their 11th championship behind a strong performance from Chris Carpenter and timely hitting. 
                 Freese's heroics earned him Series MVP honors, capping a miraculous postseason run for a team 
                 that barely made the playoffs. It remains one of the most thrilling and memorable World Series 
-                in baseball history.</p>
-
-        </>
+                in baseball history.
+            </p>
+        </div>
     )
 }
 

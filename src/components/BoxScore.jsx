@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GameBlurb from "./GameBlurb";
+import './BoxScore.css';
 
 const games = [
   {
