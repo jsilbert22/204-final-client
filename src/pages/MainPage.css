@@ -11,5 +11,20 @@
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding-left: 20px;
-    border-left: 2px solid rgb(239, 236, 236);
+    border-left: 2px solid #e92e2e;
+}
+
+#player-search-intro {
+    color: rgb(239, 236, 236);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-left: 20px;
+    border-left: 2px solid #e92e2e;
 }

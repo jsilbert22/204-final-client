@@ -3,8 +3,10 @@ import './GameBlurb.css';
 
 function GameBlurb({ summary }) {
   return (
-    <div id="gameblurb">
-      <p>{summary}</p>
+    <div id="blurb-container">
+      <div id="game-blurb">
+        <p>{summary}</p>
+      </div>
     </div>
   );
 }

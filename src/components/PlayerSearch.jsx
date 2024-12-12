@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './PlayerSearch.css';
+import { UserRoundSearch } from 'lucide-react';
 
 const PlayerSearch = () => {
   const [playerName, setPlayerName] = useState('');
@@ -32,19 +33,23 @@ const PlayerSearch = () => {
 
   return (
     <div id="player-search">
-      <h1>MLB Player Search</h1>
-      <div id="search-bar">
-        <input
-          id="search"
-          type="text"
-          placeholder="Enter player name (e.g. Paul Goldschmidt)"
-          value={playerName}
-          onChange={(e) => setPlayerName(e.target.value)}
-        />
-        <button id="button" onClick={handleSearch}>Search</button>
-      </div>
+      <div id="search-bar-and-error">
+        <div id="search-icon">
+          <UserRoundSearch size={150} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
+        </div>
+        <div id="search-bar">
+          <input
+            id="search"
+            type="text"
+            placeholder="Enter player name (e.g. Paul Goldschmidt)"
+            value={playerName}
+            onChange={(e) => setPlayerName(e.target.value)}
+          />
+          <button id="button" onClick={handleSearch}>Search</button>
+        </div>
 
-      {error && <p className="error">{error}</p>}
+        {error && <p id="error">{error}</p>}
+      </div>
 
       <div id="player-info">
         <div className="player-data"><strong>Name:</strong> {playerData ? `${playerData.FirstName} ${playerData.LastName}` : "N/A"}</div>

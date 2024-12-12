@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GameBlurb from "./GameBlurb";
-import PlayerSearch from "./PlayerSearch";
 import './BoxScore.css';
+import { SquareArrowDownLeft } from 'lucide-react';
 
 const games = [
   {
@@ -41,7 +41,7 @@ const games = [
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["STL", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "2", "0"],
-      ["TEX", "1", "0", "0", "0", "0", "3", "2", "0", "X", "4", "6", "0"],
+      ["TEX", "1", "0", "0", "0", "0", "3", "0", "0", "X", "4", "6", "0"],
     ],
   },
   {
@@ -121,11 +121,13 @@ function BoxScore() {
           </button>
         ))}
       </div>
-      <div className="box-score">{renderBoxScore(activeGame.boxScore)}</div>
-      <div id="blurb-and-search">
-        <GameBlurb summary={activeGame.summary} id="gameblurb"/>
-        <PlayerSearch id="playersearch"/>
+      <div id="box-score-and-icon">
+        <div id="box-score">{renderBoxScore(activeGame.boxScore)}</div>
+        <div id="arrow">
+            <SquareArrowDownLeft size={150} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
+        </div>
       </div>
+      <GameBlurb id="gameb-lurb" summary={activeGame.summary}/>
     </div>
   );
 }

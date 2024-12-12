@@ -13,7 +13,7 @@ video {
 header {
     position: absolute;
     height: 100%;
-    width: 90%;
+    width: 87.5%;
 }
 
 #inner-text {
@@ -26,7 +26,7 @@ header {
 
 #icon {
     position: absolute;
-    top: 75%;
+    top: 77.5%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg) scale(0.8);
     opacity: 0;
@@ -57,6 +57,8 @@ h1 {
     animation: 
         typing 3.5s steps(50, end),
         blink-caret .75s step-end infinite;
+    background-color: #e92e2e;
+    padding: 5px;
 }
 
 @keyframes typing {

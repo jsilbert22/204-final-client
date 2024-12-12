@@ -15,7 +15,7 @@ function VideoBanner() {
                     <h1>It's not in the Cards, they said...</h1>
                 </div>
                 <div id="icon">
-                    <SquareArrowDownLeft size={100} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
+                    <SquareArrowDownLeft size={150} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
                 </div>
             </header>
         </div>
