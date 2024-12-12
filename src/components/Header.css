@@ -8,28 +8,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
 }
 
 h1 {
     text-align: center;
     font-family: "Racing Sans One", sans-serif;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #e92e2e;
     width: 24rem;
     padding-bottom: 3px;
     margin-bottom: 5px;
-    color: red;
+    color: #e92e2e;
 }
 
 h3 {
     font-family: "Racing Sans One", sans-serif;
     margin-bottom: 10px;
-    color: red;
-}
-
-#series-summary {
-    font-family: "Rambla", sans-serif;
-    padding: 16px;
-    border: 4px solid red;
-    margin: 16px;
-    background-color: white;
+    color: #e92e2e;
 }

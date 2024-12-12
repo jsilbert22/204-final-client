@@ -1,15 +1,16 @@
 import React from 'react';
-import videoFile from '../assets/game6.mp4';
+// import videoFile from '../assets/game6.mp4';
 import './GameFootage.css';
+import Header from './Header';
 
 function GameFootage() {
   return (
-    <>
+    <div id="game-footage">
       <video width="600" autoPlay loop muted>
         <source src={videoFile} type="video/mp4" />
         {/* YouTube link: https://www.youtube.com/watch?v=PZVCrKcOl78 */}
       </video>
-    </>
+    </div>
   );
 }
 

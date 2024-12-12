@@ -10,14 +10,14 @@ table {
 }
 
 th, td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(247, 247, 247);
   padding: 8px;
   text-align: center;
 }
 
 th {
   background-color: #e92e2e;
-  color: white;
+  color: rgb(247, 247, 247);
   font-family: "Rambla", sans-serif;
 }
 
@@ -27,7 +27,7 @@ td:nth-child(odd) {
 }
 
 td:nth-child(even) {
-  background-color: #ffe3e3;
+  background-color: rgb(247, 247, 247);
   font-family: "Rambla", sans-serif;
 }
 
@@ -36,17 +36,19 @@ td:nth-child(even) {
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 20px;
 }
 
 .tabs button {
-  background-color: transparent;
+  background-color: rgb(247, 247, 247);
+  color: #e92e2e;
   border: none;
   padding: 10px 15px;
   font-size: 1rem;
   cursor: pointer;
   transition: color 0.15s, background-color 0.15s;
   font-family: "Racing Sans One", sans-serif;
-  border-right: solid 1px white;
+  border-right: solid 1px black;
   width: 10rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -54,13 +56,13 @@ td:nth-child(even) {
 
 .tabs button:hover {
   background-color: #e92e2e;
-  color: white;
+  color: rgb(247, 247, 247);
   font-family: "Racing Sans One", sans-serif;
 }
 
 .tabs button.active {
   background-color: #e92e2e;
-  color: white;
+  color: rgb(247, 247, 247);
   font-family: "Racing Sans One", sans-serif;
 }
 
