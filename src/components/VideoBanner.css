@@ -72,3 +72,72 @@ h1 {
     from, to { border-color: transparent }
     50% { border-color: rgb(239, 236, 236); }
 }
+
+@media (max-width: 1300px) {
+    #icon {
+        display: none;
+    }
+
+    #inner-text {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #inner-text {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #inner-text {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #inner-text {
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #inner-text {
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 0.75rem;
+    }
+}

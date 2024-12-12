@@ -35,7 +35,7 @@ const PlayerSearch = () => {
     <div id="player-search">
       <div id="search-bar-and-error">
         <div id="search-icon">
-          <UserRoundSearch size={150} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
+          <UserRoundSearch id="urs" size={125} strokeWidth={0.75} color="rgb(239, 236, 236)"/>
         </div>
         <div id="search-bar">
           <input

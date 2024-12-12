@@ -17,7 +17,7 @@ const games = [
   {
     id: 2,
     title: "Game 2",
-    summary: "The Rangers evened the series in a nail-biting 2-1 victory, showcasing clutch hitting and lights-out pitching. Ian Kinsler and Elvis Andrus ignited the offense in the ninth inning, scoring two runs off Cardinals' closer Jason Motte. Despite Jaime Garcia's stellar start for St. Louis, Texas' bullpen preserved the lead, with Neftalí Feliz closing the door. The tension in St. Louis was palpable as both teams showcased their championship mettle.",
+    summary: "The Rangers evened the series in a nail-biting 2-1 victory, showcasing clutch hitting and lights-out pitching. Ian Kinsler and Elvis Andrus ignited the offense in the ninth inning, scoring two runs off Cardinals' closer Jason Motte. Despite Jaime Garcia's stellar start for St. Louis, Texas' bullpen preserved the lead, with Neftalí Feliz closing the door. The tension in St. Louis was palpable as both teams showcased their championship valor.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["TEX", "0", "0", "0", "0", "0", "0", "0", "0", "2", "2", "5", "1"],
@@ -27,7 +27,7 @@ const games = [
   {
     id: 3,
     title: "Game 3",
-    summary: "The Cardinals exploded offensively in Arlington, crushing the Rangers 16-7 in a record-setting performance. Albert Pujols stole the show with three home runs, tying a World Series record. He added six RBIs and five hits in a jaw-dropping display of power. St. Louis capitalized on Texas' shaky pitching, while Cardinals starter Kyle Lohse was backed by a relentless lineup. This lopsided game reminded everyone of the firepower St. Louis brought to the series.",
+    summary: "The Cardinals exploded offensively in Arlington, crushing the Rangers 16-7 in a record-setting performance. Albert Pujols stole the show with three home runs, tying a World Series record. He added six RBIs and five hits in an impressive display of power. St. Louis capitalized on Texas' shaky pitching, while Cardinals starter Kyle Lohse was backed by a relentless lineup. This lopsided game reminded everyone of the firepower St. Louis brought to the series.",
     boxScore: [
       ["Inning", "1", "2", "3", "4", "5", "6", "7", "8", "9", "R", "H", "E"],
       ["STL", "1", "0", "0", "4", "3", "4", "2", "1", "1", "16", "15", "0"],

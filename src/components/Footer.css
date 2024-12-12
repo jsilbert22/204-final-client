@@ -12,3 +12,15 @@
     padding: 10px;
     color: rgb(239, 236, 236);
 }
+
+@media (max-width: 650px) {
+    #footer {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #footer {
+        font-size: 0.6rem;
+    }
+}

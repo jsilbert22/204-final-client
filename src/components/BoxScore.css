@@ -45,6 +45,7 @@ td:nth-child(even) {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  width: 100%;
 }
 
 .tabs button {
@@ -58,8 +59,11 @@ td:nth-child(even) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  border-right: solid 1px rgb(22, 21, 21);
+  /* border-right: solid 1px rgb(22, 21, 21); */
   width: 10rem;
+  gap: 1px;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 .tabs button:hover {
@@ -94,4 +98,98 @@ td:nth-child(even) {
   top: 235px;
   left: 60px;
   transform: rotate(-135deg)
+}
+
+@media (max-width: 1300px) {
+  #container {
+      margin: 60px;
+  }
+  th {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  td:nth-child(odd) {
+    font-size: 1rem;
+  }
+  td:nth-child(even) {
+    font-size: 1rem;
+  }
+  .tabs {
+    margin-top: 60px;
+  }
+  .tabs button {
+    padding: 8px;
+    font-size: 1rem;
+    width: 8rem;
+  }
+  .tabs button:hover {
+    font-size: 1rem;
+  }
+  .tabs button.active {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #container {
+    margin: 40px;
+    z-index: 100;
+  }
+  #arrow {
+    display: none;
+    z-index: -1;
+  }
+  th {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+  td:nth-child(odd) {
+    font-size: 0.75rem;
+  }
+  td:nth-child(even) {
+    font-size: 0.75rem;
+  }
+  .tabs {
+    margin-top: 40px;
+  }
+  .tabs button {
+    padding: 6px;
+    font-size: 0.75rem;
+    width: 6rem;
+  }
+  .tabs button:hover {
+    font-size: 0.75rem;
+  }
+  .tabs button.active {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 650px) {
+  #container {
+    margin: 20px;
+    z-index: 100;
+  }
+  th {
+    font-size: 0.5rem;
+    padding: 4px;
+  }
+  td:nth-child(odd) {
+    font-size: 0.5rem;
+    padding: 1px;
+  }
+  td:nth-child(even) {
+    font-size: 0.5rem;
+    padding: 1px;
+  }
+  .tabs button {
+    padding: 2px;
+    font-size: 0.5rem;
+  }
+  .tabs button:hover {
+    font-size: 0.5rem;
+  }
+  .tabs button.active {
+    font-size: 0.5rem;
+  }
 }
