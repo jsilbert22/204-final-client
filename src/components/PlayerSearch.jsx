@@ -10,7 +10,7 @@ const PlayerSearch = () => {
   const handleSearch = () => {
     if (!playerName.trim()) return;
 
-    fetch("https://api.sportsdata.io/v3/mlb/scores/json/PlayersByFreeAgents?key=122bf01103de4577ab297ec486238a0c")
+    fetch("https://api.sportsdata.io/v3/mlb/scores/json/PlayersBasic/STL?key=122bf01103de4577ab297ec486238a0c")
       .then((response) => response.json())
       .then((data) => {
         const player = data.find(
