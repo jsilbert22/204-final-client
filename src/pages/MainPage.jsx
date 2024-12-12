@@ -23,12 +23,14 @@ function MainPage() {
             </p>
             <BoxScore />
             <p id="player-search-intro">
-                The 2011 World Series cemented the legacies of several Cardinals into franchise history. Notable
-                names include David Freese and Albert Pujols, though it truly takes an army to pull off 
-                any feat of championship magnitude. Use the Player Search Feature below to learn more about your 
-                favorite past and present Cardinals, or any MLB stars that come to mind.
+                The 2011 World Series cemented the legacies of several Cardinals into franchise history. Now, a 
+                new generation of superstars must carry lead the team to championship #12. Use the Player Search 
+                Feature below to learn more about your favorite current Cardinals.
             </p>
             <PlayerSearch />
+            <p id="conclusion">
+                Thanks for joining me on this stroll down Memory Lane. May history repeat itself soon!
+            </p>
             <Footer />
         </div>
     )

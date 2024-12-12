@@ -41,7 +41,7 @@ const PlayerSearch = () => {
           <input
             id="search"
             type="text"
-            placeholder="Enter player name (e.g. Paul Goldschmidt)"
+            placeholder="Enter player name (e.g. Jordan Walker)"
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
           />
