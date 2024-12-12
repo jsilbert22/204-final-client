@@ -157,6 +157,7 @@ button {
     line-height: 1.75rem;
     border: none;
     padding: 20px;
+    width: 80%;
   }
   #search {
     font-size: 0.75rem;
@@ -180,9 +181,6 @@ button {
   .player-data {
     font-size: 1rem;
   }
-  #urs {
-    size: 50px;
-  }
   #error {
     font-size: 1rem;
     margin-top: 15px;
@@ -197,18 +195,18 @@ button {
     margin-right: 20px;
   }
   #player-info {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
     margin: 20px;
   }
   #search {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     height: 1.25rem;
-    width: 10rem;
+    width: 14rem;
   }
   #button {
     height: 2.5rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   #urs {
     size: 25px;
@@ -218,12 +216,9 @@ button {
     flex-direction: column;
     align-items: center;
     width: 60%;
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .player-data {
-    font-size: 0.75rem;
-  }
-  #urs {
-    size: 25px;
+    font-size: 0.8rem;
   }
 }

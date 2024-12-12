@@ -1,4 +1,5 @@
 #video-banner {
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -79,7 +80,7 @@ h1 {
     }
 
     #inner-text {
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -92,7 +93,7 @@ h1 {
 
 @media (max-width: 900px) {
     #inner-text {
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -103,9 +104,9 @@ h1 {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
     #inner-text {
-        top: 20%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -118,7 +119,7 @@ h1 {
 
 @media (max-width: 500px) {
     #inner-text {
-        top: 15%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -131,7 +132,7 @@ h1 {
 
 @media (max-width: 400px) {
     #inner-text {
-        top: 15%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
