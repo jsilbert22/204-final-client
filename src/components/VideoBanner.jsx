@@ -6,7 +6,7 @@ import { SquareArrowDownLeft } from 'lucide-react';
 function VideoBanner() {
     return (
         <div id="video-banner">
-            <video width="600" autoPlay loop muted>
+            <video width="600" autoPlay loop muted playsInline preload="auto">
                 <source src={videoFile} type="video/mp4" />
                 {/* YouTube link: https://www.youtube.com/watch?v=PZVCrKcOl78 */}
             </video>
